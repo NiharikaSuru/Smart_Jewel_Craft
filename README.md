@@ -58,41 +58,6 @@ A comprehensive full-stack jewelry customization and marketplace web application
 
 ## 📁 Project Structure
 
-```
-smart-jewel-craft/
-├── public/
-│   ├── index.html
-│   └── images/           # Product and reference images
-├── src/
-│   ├── components/       # Reusable UI components
-│   │   ├── Header.js
-│   │   ├── Footer.js
-│   │   └── JewelryCard.js
-│   ├── context/          # React Context for state management
-│   │   └── AppContext.js
-│   ├── data/             # Static data files
-│   │   ├── jewelry.js
-│   │   ├── sustainability.js
-│   │   ├── styleAssistant.js
-│   │   └── expertReview.js
-│   ├── pages/            # Main application pages
-│   │   ├── HomePage.js
-│   │   ├── CategoriesPage.js
-│   │   ├── MarketplacePage.js
-│   │   ├── CartPage.js
-│   │   ├── BillingPage.js
-│   │   ├── StyleAssistantPage.js
-│   │   ├── ExpertReviewPage.js
-│   │   └── SustainabilityPage.js
-│   ├── styles/           # CSS stylesheets
-│   │   └── index.css
-│   ├── utils/            # Utility functions
-│   │   └── pricing.js
-│   ├── App.js            # Main application component
-│   └── index.js          # Application entry point
-├── package.json
-└── README.md
-```
 
 ## 🚀 Getting Started
 
