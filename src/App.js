@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import NotificationSystem from './components/NotificationSystem';
 import HomePage from './pages/HomePage';
 import CategoriesPage from './pages/CategoriesPage';
-import MarketplacePage from './pages/MarketplacePage';
+// import MarketplacePage from './pages/MarketplacePage';
 import CartPage from './pages/CartPage';
 import BillingPage from './pages/BillingPage';
 import StyleAssistantPage from './pages/StyleAssistantPage';
@@ -23,8 +23,8 @@ const AppContent = () => {
         return <HomePage />;
       case 'categories':
         return <CategoriesPage />;
-      case 'marketplace':
-        return <MarketplacePage />;
+      // case 'marketplace':
+      //   return <MarketplacePage />;
       case 'cart':
         return <CartPage />;
       case 'billing':

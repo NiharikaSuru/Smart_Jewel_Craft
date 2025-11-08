@@ -22,7 +22,7 @@ const Header = () => {
   const navigationItems = [
     { id: 'home', label: 'Home' },
     { id: 'categories', label: 'Categories' },
-    { id: 'marketplace', label: 'Marketplace' },
+    // { id: 'marketplace', label: 'Marketplace' },
     { id: 'style-assistant', label: 'Style Assistant' },
     { id: 'expert-review', label: 'Expert Review' },
     { id: 'sustainability', label: 'Sustainability' }

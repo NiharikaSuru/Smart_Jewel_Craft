@@ -98,7 +98,7 @@ export const experts = [
     specialties: ["Diamond Grading", "Engagement Rings", "Modern Jewelry"],
     rating: 4.9,
     reviewCount: 342,
-    avatar: "/images/expert-sarah.jpg"
+    avatar: "https://plus.unsplash.com/premium_photo-1661764878654-3d0fc2eefcca?w=400&fit=crop&q=80"
   },
   {
     id: 2,
@@ -108,7 +108,7 @@ export const experts = [
     specialties: ["Colored Gemstones", "Vintage Jewelry", "Insurance Appraisals"],
     rating: 4.8,
     reviewCount: 287,
-    avatar: "/images/expert-michael.jpg"
+    avatar: "https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?w=400&fit=crop"
   },
   {
     id: 3,
@@ -118,7 +118,7 @@ export const experts = [
     specialties: ["Antique Jewelry", "Period Identification", "Authentication"],
     rating: 4.9,
     reviewCount: 156,
-    avatar: "/images/expert-elena.jpg"
+    avatar: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?w=400&fit=crop"
   }
 ];
 

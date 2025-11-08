@@ -273,7 +273,17 @@ const StyleAssistantPage = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {recommendations.recommendedItems.map((item) => (
-                <JewelryCard key={item.id} item={{ ...item, images: ["https://img.freepik.com/free-photo/close-up-diamond-ring_23-2149144352.jpg"] }} />
+                <JewelryCard key={item.id} item={{ ...item, images: [
+                  item.category === 'rings' 
+                    ? "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800" 
+                    : item.category === 'necklaces'
+                    ? "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=800"
+                    : item.category === 'earrings'
+                    ? "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?w=800"
+                    : item.category === 'bracelets'
+                    ? "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800"
+                    : "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800"
+                ] }} />
               ))}
             </div>
           </div>
