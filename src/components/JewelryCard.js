@@ -73,8 +73,8 @@ const JewelryCard = ({ item, variant = 'default', className = '' }) => {
   };
 
   const cardClasses = variant === 'compact' 
-    ? 'bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1'
-    : 'bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2';
+    ? 'bg-white border border-gray-100 overflow-hidden transition-all duration-200'
+    : 'bg-white border border-gray-100 overflow-hidden transition-all duration-200';
 
   return (
     <div className={`${cardClasses} ${className} cursor-pointer group`} onClick={handleViewDetails}>
@@ -84,7 +84,7 @@ const JewelryCard = ({ item, variant = 'default', className = '' }) => {
           <img
             src={item.images[0] || 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800'}
             alt={item.name}
-            className="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-64 object-cover object-center"
           />
         </div>
         
@@ -113,25 +113,6 @@ const JewelryCard = ({ item, variant = 'default', className = '' }) => {
           </div>
         </div>
 
-        {/* Badges */}
-        <div className="absolute top-3 left-3 flex flex-col space-y-1">
-          {item.originalPrice && item.originalPrice > item.price && (
-            <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full font-medium">
-              Sale
-            </span>
-          )}
-          {item.sustainability?.recycledMetal && (
-            <span className="bg-green-500 text-white text-xs px-2 py-1 rounded-full font-medium">
-              Eco
-            </span>
-          )}
-          {item.customizable && (
-            <span className="bg-purple-500 text-white text-xs px-2 py-1 rounded-full font-medium">
-              Custom
-            </span>
-          )}
-        </div>
-
         {/* Stock Status */}
         {!item.inStock && (
           <div className="absolute inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center">
@@ -147,7 +128,7 @@ const JewelryCard = ({ item, variant = 'default', className = '' }) => {
           <div className="flex items-center space-x-1">
             <span className="text-sm text-gray-600">{item.seller.name}</span>
             {item.seller.verified && (
-              <CheckBadgeIcon className="h-4 w-4 text-blue-500" />
+              <CheckBadgeIcon className="h-4 w-4 text-gray-400" />
             )}
           </div>
           {item.sustainability?.ethicalStones && (

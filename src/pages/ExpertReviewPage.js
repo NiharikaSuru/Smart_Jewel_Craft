@@ -481,12 +481,12 @@ const ExpertReviewPage = () => {
               </h3>
               <div className="space-y-4">
                 {experts.slice(0, 2).map((expert) => (
-                  <div key={expert.id} className="flex items-start space-x-3">
-                    <img
+                  <div key={expert.id} className="flex items-start space-x-3 border-b border-gray-200 not:last:border-b-0 pb-4">
+                    {/* <img
                       src="/images/silver_bracelet.jpg"
                       alt={expert.name}
                       className="w-12 h-12 rounded-full shadow-md"
-                    />
+                    /> */}
                     <div className="flex-1">
                       <h4 className="font-medium text-gray-900">{expert.name}</h4>
                       <p className="text-sm text-gray-600">{expert.title}</p>

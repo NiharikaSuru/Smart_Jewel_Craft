@@ -42,30 +42,30 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
         {/* Top bar */}
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-14 gap-4">
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <SparklesIcon className="h-8 w-8 text-amber-500 mr-2" />
-              <h1 className="text-xl font-bold text-gray-900 font-playfair">
+              <SparklesIcon className="h-6 w-6 text-amber-500 mr-2" />
+              <h1 className="text-lg font-medium text-amber-500 ">
                 Smart Jewel Craft
               </h1>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-6">
             {navigationItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavigation(item.id)}
                 className={`text-sm font-medium transition-colors duration-200 ${
                   state.currentPage === item.id
-                    ? 'text-amber-600 border-b-2 border-amber-600'
-                    : 'text-gray-700 hover:text-amber-600'
+                    ? 'text-gray-900 border-b border-gray-900'
+                    : 'text-gray-600 hover:text-gray-900'
                 }`}
               >
                 {item.label}
@@ -74,21 +74,21 @@ const Header = () => {
           </nav>
 
           {/* Search Bar */}
-          <div className="hidden md:flex items-center flex-1 max-w-md mx-8">
+          {/* <div className="hidden md:flex items-center flex-1 max-w-md mx-8">
             <form onSubmit={handleSearch} className="w-full relative">
               <input
                 type="text"
                 placeholder="Search jewelry..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                className="w-full pl-10 pr-4 py-1.5 border border-gray-200 focus:border-gray-400 outline-none transition-colors duration-200"
               />
-              <MagnifyingGlassIcon className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
+              <MagnifyingGlassIcon className="absolute left-3 top-2 h-5 w-5 text-gray-400" />
             </form>
-          </div>
+          </div> */}
 
           {/* Actions */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4">
             {/* User Profile */}
             <button 
               onClick={() => handleNavigation('profile')}

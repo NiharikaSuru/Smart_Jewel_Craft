@@ -107,9 +107,12 @@ const CartPage = () => {
                     {/* Product Image */}
                     <div className="flex-shrink-0">
                       <img
-                        src="/images/gold_necklace.jpg"
+                        src={item.image || item.images?.[0] || 'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=240'}
                         alt={item.name}
                         className="w-24 h-24 object-cover rounded-lg shadow-md"
+                        onError={(e) => {
+                          e.target.src = 'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=240';
+                        }}
                       />
                     </div>
 

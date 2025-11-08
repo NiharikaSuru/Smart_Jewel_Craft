@@ -30,6 +30,32 @@ const SustainabilityPage = () => {
     { id: 'products', label: 'Sustainable Products', icon: ShieldCheckIcon }
   ];
 
+  const renderTabs = () => (
+    <div className="border-b border-gray-100 mb-8">
+      <nav className="flex overflow-x-auto no-scrollbar -mb-px">
+        {tabs.map((tab) => {
+          const Icon = tab.icon;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => setSelectedTab(tab.id)}
+              className={`
+                flex items-center px-4 py-3 border-b-2 text-sm font-medium whitespace-nowrap
+                ${selectedTab === tab.id
+                  ? 'border-gray-900 text-gray-900'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                }
+              `}
+            >
+              <Icon className="h-5 w-5 mr-2" />
+              {tab.label}
+            </button>
+          );
+        })}
+      </nav>
+    </div>
+  );
+
   const EducationModal = () => {
     if (!selectedEducation) return null;
 
@@ -210,72 +236,26 @@ const SustainabilityPage = () => {
               ))}
             </div>
 
-            {/* Key Features */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <LeafIcon className="h-8 w-8 text-green-600" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Eco-Friendly Materials
-                </h3>
-                <p className="text-gray-600">
-                  Recycled metals and responsibly sourced gemstones that minimize environmental impact
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <ShieldCheckIcon className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Ethical Sourcing
-                </h3>
-                <p className="text-gray-600">
-                  Fair labor practices and transparent supply chains supporting communities worldwide
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckBadgeIcon className="h-8 w-8 text-purple-600" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Certified Quality
-                </h3>
-                <p className="text-gray-600">
-                  Third-party certifications ensuring the highest standards of sustainability and ethics
-                </p>
-              </div>
-            </div>
           </div>
         )}
 
         {/* Certifications Tab */}
         {selectedTab === 'certifications' && (
           <div className="space-y-8">
-            <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Trusted Certifications
-              </h2>
-              <p className="text-lg text-gray-600">
-                Our sustainability partners and certification bodies
-              </p>
-            </div>
-
+          
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {sustainabilityInfo.certifications.map((cert) => (
                 <div key={cert.id} className="bg-white rounded-lg shadow-md p-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    {/* <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <img
                         src={cert.logo || '/images/cert-placeholder.png'}
                         alt={cert.name}
                         className="w-12 h-12 object-contain"
                       />
-                    </div>
+                    </div> */}
                     <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      <h3 className="text-xl font-semibold text-gray-900 ">
                         {cert.name}
                       </h3>
                       <p className="text-gray-600">
@@ -316,16 +296,7 @@ const SustainabilityPage = () => {
         {/* Materials Tab */}
         {selectedTab === 'materials' && (
           <div className="space-y-8">
-            <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Sustainable Materials
-              </h2>
-              <p className="text-lg text-gray-600">
-                Understanding the impact of different material choices
-              </p>
-            </div>
-
-            {/* Metal Sourcing */}
+                       {/* Metal Sourcing */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
@@ -431,15 +402,7 @@ const SustainabilityPage = () => {
         {/* Education Tab */}
         {selectedTab === 'education' && (
           <div className="space-y-8">
-            <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Educational Resources
-              </h2>
-              <p className="text-lg text-gray-600">
-                Learn about sustainable jewelry practices and make informed choices
-              </p>
-            </div>
-
+           
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {educationalContent.map((content) => (
                 <div
@@ -486,7 +449,7 @@ const SustainabilityPage = () => {
         {/* Sustainable Products Tab */}
         {selectedTab === 'products' && (
           <div className="space-y-8">
-            <div className="flex items-center justify-between">
+            {/* <div className="flex items-center justify-between">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                   Sustainable Jewelry Collection
@@ -502,7 +465,7 @@ const SustainabilityPage = () => {
                 <span>View All</span>
                 <TruckIcon className="h-5 w-5" />
               </button>
-            </div>
+            </div> */}
 
             {/* Filters */}
             <div className="bg-white rounded-lg shadow-md p-6">

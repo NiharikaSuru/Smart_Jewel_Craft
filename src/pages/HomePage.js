@@ -62,19 +62,19 @@ const HomePage = () => {
     {
       icon: StarIcon,
       title: "Expert Reviews",
-      description: "Professional analysis and detailed reports from certified gemologists",
+      description: "Professional analysis and detailed reports from certified and experienced gemologists",
       color: "bg-blue-100 text-blue-600"
     },
     {
       icon: ShieldCheckIcon,
       title: "Virtual Try-On",
-      description: "See how jewelry looks on you with our advanced AR technology",
+      description: "See how jewelry looks on you with our advanced AR technology and realistic rendering",
       color: "bg-green-100 text-green-600"
     },
     {
       icon: TruckIcon,
       title: "Sustainability",
-      description: "Ethically sourced materials and detailed sustainability information",
+      description: "Ethically sourced materials and detailed sustainability information on very jewelry piece",
       color: "bg-amber-100 text-amber-600"
     }
   ];
@@ -84,7 +84,7 @@ const HomePage = () => {
       id: 1,
       name: "Sarah Johnson",
       role: "Customer",
-      content: "The style assistant helped me find the perfect engagement ring. The recommendations were spot-on!",
+      content: "The style assistant helped me find the best engagement ring. The recommendations were spot-on!",
       rating: 5,
       avatar: "/images/testimonial-1.jpg"
     },
@@ -178,13 +178,13 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="text-center group">
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-6 ${feature.color} group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                  <feature.icon className="h-8 w-8" />
+                <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full mb-2 ${feature.color} group-hover:scale-110 transition-transform duration-300 `}>
+                  <feature.icon className="h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-md font-semibold text-gray-900 mb-1">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-sm">
                   {feature.description}
                 </p>
               </div>
@@ -282,11 +282,11 @@ const HomePage = () => {
                   "{testimonial.content}"
                 </p>
                 <div className="flex items-center">
-                  <img
+                  {/* <img
                     src="/images/diamond_ring.jpg"
                     alt={testimonial.name}
                     className="w-12 h-12 rounded-full mr-4"
-                  />
+                  /> */}
                   <div>
                     <h4 className="font-semibold">{testimonial.name}</h4>
                     <p className="text-gray-400 text-sm">{testimonial.role}</p>
@@ -317,7 +317,7 @@ const HomePage = () => {
             </button>
             <button
               onClick={() => setCurrentPage('marketplace')}
-              className="btn btn-outline border-white text-white hover:bg-white hover:text-amber-500 btn-lg px-8 py-4 text-lg font-semibold"
+              className="btn bg-white text-amber-500 hover:bg-gray-100 btn-lg px-8 py-4 text-lg font-semibold"
             >
               Browse Marketplace
             </button>

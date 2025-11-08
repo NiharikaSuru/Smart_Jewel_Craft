@@ -4,25 +4,25 @@ export const sustainabilityInfo = {
       id: "rjc",
       name: "Responsible Jewelry Council",
       description: "Promotes responsible ethical, human rights, social and environmental practices",
-      logo: "https://www.responsiblejewellery.com/wp-content/uploads/2019/09/RJC_Logo.png"
+      logo: "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=400"
     },
     {
       id: "fairtrade",
       name: "Fair Trade Gold",
       description: "Ensures miners receive fair wages and work in safe conditions",
-      logo: "https://www.fairtrade.org.uk/wp-content/uploads/2020/07/Fairtrade_Mark.png"
+      logo: "https://images.unsplash.com/photo-1574020459347-e13feb1e11ad?w=400"
     },
     {
       id: "kimberley",
       name: "Kimberley Process",
       description: "Prevents conflict diamonds from entering the mainstream market",
-      logo: "https://www.kimberleyprocess.com/sites/all/themes/kpcs/images/kp_logo.png"
+      logo: "https://images.unsplash.com/photo-1600701353725-c87c53dc6d11?w=400"
     },
     {
       id: "spi",
       name: "Sustainable Pearl Initiative",
       description: "Promotes sustainable pearl farming and ocean conservation",
-      logo: "https://images.unsplash.com/photo-1619119069152-a2b331eb392a?w=400"
+      logo: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400"
     }
   ],
   metalSourcing: {
@@ -65,7 +65,7 @@ export const educationalContent = [
     category: "sustainability",
     content: "Learn about the environmental and social impact of jewelry production and how to make responsible choices.",
     readTime: "5 min",
-    image: "/images/education-sustainability.jpg"
+    image: "https://images.unsplash.com/photo-1592492152545-9695d3f473f4?w=800"
   },
   {
     id: 2,
@@ -73,7 +73,7 @@ export const educationalContent = [
     category: "materials",
     content: "Discover the differences between recycled and newly mined precious metals and their environmental impact.",
     readTime: "3 min",
-    image: "/images/education-metals.jpg"
+    image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800"
   },
   {
     id: 3,
@@ -81,7 +81,7 @@ export const educationalContent = [
     category: "gemstones",
     content: "Everything you need to know about conflict-free diamonds and ethical gemstone sourcing.",
     readTime: "7 min",
-    image: "/images/education-diamonds.jpg"
+    image: "https://images.unsplash.com/photo-1581977012607-4091712d36f9?w=800"
   },
   {
     id: 4,
@@ -89,6 +89,6 @@ export const educationalContent = [
     category: "gemstones",
     content: "Compare lab-grown and natural gemstones in terms of quality, value, and environmental impact.",
     readTime: "6 min",
-    image: "/images/education-lab-grown.jpg"
+    image: "https://images.unsplash.com/photo-1584307833174-a3bbb76ab367?w=800"
   }
 ];
