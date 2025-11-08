@@ -9,8 +9,7 @@ import {
   SparklesIcon,
   BookOpenIcon,
   ClockIcon,
-  CheckBadgeIcon,
-  TruckIcon
+  CheckBadgeIcon
 } from '@heroicons/react/24/outline';
 
 const SustainabilityPage = () => {

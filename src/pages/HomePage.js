@@ -7,9 +7,7 @@ import {
   StarIcon, 
   ShieldCheckIcon,
   TruckIcon,
-  HeartIcon,
-  ChevronRightIcon,
-  PlayCircleIcon
+  ChevronRightIcon
 } from '@heroicons/react/24/outline';
 
 const HomePage = () => {
