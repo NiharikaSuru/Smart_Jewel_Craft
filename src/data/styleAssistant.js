@@ -4,11 +4,11 @@ export const styleQuestions = [
     question: "What's your preferred style aesthetic?",
     type: "multiple-choice",
     options: [
-      { id: "classic", label: "Classic & Timeless", image: "/images/style-classic.jpg" },
-      { id: "modern", label: "Modern & Minimalist", image: "/images/style-modern.jpg" },
-      { id: "vintage", label: "Vintage & Antique", image: "/images/style-vintage.jpg" },
-      { id: "bohemian", label: "Bohemian & Eclectic", image: "/images/style-bohemian.jpg" },
-      { id: "glamorous", label: "Glamorous & Bold", image: "/images/style-glamorous.jpg" }
+      { id: "classic", label: "Classic & Timeless", image: "https://images.unsplash.com/photo-1603561591411-77e003d15943?w=800" },
+      { id: "modern", label: "Modern & Minimalist", image: "https://images.unsplash.com/photo-1611955167811-4711904bb9f8?w=800" },
+      { id: "vintage", label: "Vintage & Antique", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800" },
+      { id: "bohemian", label: "Bohemian & Eclectic", image: "https://images.unsplash.com/photo-1576723417715-6b408c988c23?w=800" },
+      { id: "glamorous", label: "Glamorous & Bold", image: "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?w=800" }
     ]
   },
   {

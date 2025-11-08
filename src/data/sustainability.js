@@ -4,25 +4,25 @@ export const sustainabilityInfo = {
       id: "rjc",
       name: "Responsible Jewelry Council",
       description: "Promotes responsible ethical, human rights, social and environmental practices",
-      logo: "/images/cert-rjc.png"
+      logo: "https://www.responsiblejewellery.com/wp-content/uploads/2019/09/RJC_Logo.png"
     },
     {
       id: "fairtrade",
       name: "Fair Trade Gold",
       description: "Ensures miners receive fair wages and work in safe conditions",
-      logo: "/images/cert-fairtrade.png"
+      logo: "https://www.fairtrade.org.uk/wp-content/uploads/2020/07/Fairtrade_Mark.png"
     },
     {
       id: "kimberley",
       name: "Kimberley Process",
       description: "Prevents conflict diamonds from entering the mainstream market",
-      logo: "/images/cert-kimberley.png"
+      logo: "https://www.kimberleyprocess.com/sites/all/themes/kpcs/images/kp_logo.png"
     },
     {
       id: "spi",
       name: "Sustainable Pearl Initiative",
       description: "Promotes sustainable pearl farming and ocean conservation",
-      logo: "/images/cert-spi.png"
+      logo: "https://images.unsplash.com/photo-1619119069152-a2b331eb392a?w=400"
     }
   ],
   metalSourcing: {

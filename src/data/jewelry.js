@@ -6,7 +6,10 @@ export const jewelryItems = [
     subcategory: "engagement",
     price: 2500,
     originalPrice: 3000,
-    images: ["/images/ring1.jpg", "/images/ring1-2.jpg"],
+    images: [
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800",
+      "https://images.unsplash.com/photo-1602751184accordingly236-ed3273c0a8b5?w=800"
+    ],
     materials: ["14k White Gold", "1ct Diamond"],
     description: "Classic solitaire engagement ring with brilliant cut diamond",
     rating: 4.8,
@@ -35,7 +38,10 @@ export const jewelryItems = [
     subcategory: "tennis",
     price: 1800,
     originalPrice: 2200,
-    images: ["/images/bracelet1.jpg", "/images/bracelet1-2.jpg"],
+    images: [
+      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800",
+      "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800"
+    ],
     materials: ["18k Yellow Gold", "Emerald Stones"],
     description: "Elegant tennis bracelet with natural emerald stones",
     rating: 4.7,
@@ -64,7 +70,10 @@ export const jewelryItems = [
     subcategory: "drops",
     price: 450,
     originalPrice: 550,
-    images: ["/images/earrings1.jpg", "/images/earrings1-2.jpg"],
+    images: [
+      "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?w=800",
+      "https://images.unsplash.com/photo-1635767798638-3665c302acba?w=800"
+    ],
     materials: ["Sterling Silver", "Freshwater Pearls"],
     description: "Classic pearl drop earrings with sterling silver hooks",
     rating: 4.6,
@@ -93,7 +102,10 @@ export const jewelryItems = [
     subcategory: "pendants",
     price: 980,
     originalPrice: 1200,
-    images: ["/images/necklace1.jpg", "/images/necklace1-2.jpg"],
+    images: [
+      "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=800",
+      "https://images.unsplash.com/photo-1599643477516-4570e112bf77?w=800"
+    ],
     materials: ["14k Rose Gold", "Blue Sapphire"],
     description: "Delicate sapphire pendant on rose gold chain",
     rating: 4.9,
@@ -122,7 +134,10 @@ export const jewelryItems = [
     subcategory: "statement",
     price: 3200,
     originalPrice: 3800,
-    images: ["/images/ring2.jpg", "/images/ring2-2.jpg"],
+    images: [
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800",
+      "https://images.unsplash.com/photo-1605100804746-5dd07ae051c3?w=800"
+    ],
     materials: ["Platinum", "2ct Ruby", "Diamond Accents"],
     description: "Bold statement ring with central ruby and diamond accents",
     rating: 4.8,
@@ -150,7 +165,7 @@ export const categories = [
   {
     id: "rings",
     name: "Rings",
-    image: "/images/category-rings.jpg",
+    image: "https://images.unsplash.com/photo-1544207240-43ad33b89000?w=800",
     subcategories: [
       { id: "engagement", name: "Engagement" },
       { id: "wedding", name: "Wedding" },
@@ -162,7 +177,7 @@ export const categories = [
   {
     id: "necklaces",
     name: "Necklaces",
-    image: "/images/category-necklaces.jpg",
+    image: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=800",
     subcategories: [
       { id: "pendants", name: "Pendants" },
       { id: "chains", name: "Chains" },
@@ -174,7 +189,7 @@ export const categories = [
   {
     id: "earrings",
     name: "Earrings",
-    image: "/images/category-earrings.jpg",
+    image: "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?w=800",
     subcategories: [
       { id: "studs", name: "Studs" },
       { id: "drops", name: "Drops" },
@@ -186,7 +201,7 @@ export const categories = [
   {
     id: "bracelets",
     name: "Bracelets",
-    image: "/images/category-bracelets.jpg",
+    image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800",
     subcategories: [
       { id: "tennis", name: "Tennis" },
       { id: "bangles", name: "Bangles" },
@@ -198,7 +213,7 @@ export const categories = [
   {
     id: "watches",
     name: "Watches",
-    image: "/images/category-watches.jpg",
+    image: "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
     subcategories: [
       { id: "luxury", name: "Luxury" },
       { id: "sport", name: "Sport" },

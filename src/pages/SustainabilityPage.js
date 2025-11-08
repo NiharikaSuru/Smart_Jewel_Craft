@@ -449,7 +449,7 @@ const SustainabilityPage = () => {
                 >
                   <div className="relative h-48">
                     <img
-                      src={content.image || '/images/education-placeholder.jpg'}
+                      src={content.image || 'https://images.unsplash.com/photo-1584307833174-a3bbb76ab367?w=800'}
                       alt={content.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />

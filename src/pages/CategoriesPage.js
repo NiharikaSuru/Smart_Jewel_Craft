@@ -186,7 +186,7 @@ const CategoriesPage = () => {
                 className="group relative overflow-hidden rounded-lg aspect-square bg-white shadow-md hover:shadow-lg transition-all duration-300"
               >
                 <img
-                  src={category.image || "/images/category-placeholder.jpg"}
+                  src={category.image || "https://images.unsplash.com/photo-1600721391776-b5cd0e0048f9?w=800"}
                   alt={category.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />

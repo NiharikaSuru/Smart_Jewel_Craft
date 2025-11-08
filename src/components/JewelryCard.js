@@ -82,7 +82,7 @@ const JewelryCard = ({ item, variant = 'default', className = '' }) => {
       <div className="relative">
         <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden">
           <img
-            src={item.images[0] || '/images/placeholder-jewelry.jpg'}
+            src={item.images[0] || 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800'}
             alt={item.name}
             className="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300"
           />

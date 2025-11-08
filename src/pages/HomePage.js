@@ -30,7 +30,7 @@ const HomePage = () => {
       id: 1,
       title: "Discover Your Perfect Style",
       subtitle: "Personalized jewelry recommendations powered by intelligent style analysis",
-      image: "/images/hero-1.jpg",
+      image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200",
       cta: "Take Style Quiz",
       action: () => setCurrentPage('style-assistant')
     },
@@ -38,7 +38,7 @@ const HomePage = () => {
       id: 2,
       title: "Expert Jewelry Analysis",
       subtitle: "Get professional evaluation and detailed reports for your jewelry pieces",
-      image: "/images/hero-2.jpg",
+      image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1200",
       cta: "Start Analysis",
       action: () => setCurrentPage('expert-review')
     },
@@ -46,7 +46,7 @@ const HomePage = () => {
       id: 3,
       title: "Sustainable & Ethical",
       subtitle: "Shop jewelry from verified sellers committed to responsible practices",
-      image: "/images/hero-3.jpg",
+      image: "https://images.unsplash.com/photo-1589207212797-cfd546dea0fe?w=1200",
       cta: "Learn More",
       action: () => setCurrentPage('sustainability')
     }
