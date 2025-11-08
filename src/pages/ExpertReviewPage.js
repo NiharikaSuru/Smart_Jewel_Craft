@@ -70,15 +70,6 @@ const ExpertReviewPage = () => {
       return;
     }
 
-    const request = {
-      id: Date.now(),
-      analysisType: selectedAnalysisType,
-      images: uploadedImages,
-      details: formData,
-      status: 'submitted',
-      submittedAt: new Date().toISOString(),
-      estimatedCompletion: new Date(Date.now() + (24 * 60 * 60 * 1000)).toISOString()
-    };
 
     addNotification({
       type: 'success',

@@ -29,31 +29,31 @@ const SustainabilityPage = () => {
     { id: 'products', label: 'Sustainable Products', icon: ShieldCheckIcon }
   ];
 
-  const renderTabs = () => (
-    <div className="border-b border-gray-100 mb-8">
-      <nav className="flex overflow-x-auto no-scrollbar -mb-px">
-        {tabs.map((tab) => {
-          const Icon = tab.icon;
-          return (
-            <button
-              key={tab.id}
-              onClick={() => setSelectedTab(tab.id)}
-              className={`
-                flex items-center px-4 py-3 border-b-2 text-sm font-medium whitespace-nowrap
-                ${selectedTab === tab.id
-                  ? 'border-gray-900 text-gray-900'
-                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                }
-              `}
-            >
-              <Icon className="h-5 w-5 mr-2" />
-              {tab.label}
-            </button>
-          );
-        })}
-      </nav>
-    </div>
-  );
+  // const renderTabs = () => (
+  //   <div className="border-b border-gray-100 mb-8">
+  //     <nav className="flex overflow-x-auto no-scrollbar -mb-px">
+  //       {tabs.map((tab) => {
+  //         const Icon = tab.icon;
+  //         return (
+  //           <button
+  //             key={tab.id}
+  //             onClick={() => setSelectedTab(tab.id)}
+  //             className={`
+  //               flex items-center px-4 py-3 border-b-2 text-sm font-medium whitespace-nowrap
+  //               ${selectedTab === tab.id
+  //                 ? 'border-gray-900 text-gray-900'
+  //                 : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+  //               }
+  //             `}
+  //           >
+  //             <Icon className="h-5 w-5 mr-2" />
+  //             {tab.label}
+  //           </button>
+  //         );
+  //       })}
+  //     </nav>
+  //   </div>
+  // );
 
   const EducationModal = () => {
     if (!selectedEducation) return null;
