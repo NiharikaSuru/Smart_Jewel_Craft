@@ -70,7 +70,7 @@ const ExpertReviewPage = () => {
       return;
     }
 
-    const reviewRequest = {
+    const request = {
       id: Date.now(),
       analysisType: selectedAnalysisType,
       images: uploadedImages,

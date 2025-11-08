@@ -12,7 +12,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 const CartPage = () => {
-  const { state, removeFromCart, updateCartQuantity, addToWishlist, clearCart, setCurrentPage } = useApp();
+  const { state, removeFromCart, updateCartQuantity, addToWishlist, setCurrentPage } = useApp();
   const [promoCode, setPromoCode] = useState('');
   const [appliedPromo, setAppliedPromo] = useState(null);
 

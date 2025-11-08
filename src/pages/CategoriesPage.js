@@ -5,8 +5,7 @@ import JewelryCard from '../components/JewelryCard';
 import { 
   FunnelIcon,
   Squares2X2Icon,
-  ListBulletIcon,
-  ChevronDownIcon
+  ListBulletIcon
 } from '@heroicons/react/24/outline';
 
 const CategoriesPage = () => {

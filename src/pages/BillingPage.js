@@ -3,10 +3,7 @@ import { useApp } from '../context/AppContext';
 import { 
   CreditCardIcon,
   ShieldCheckIcon,
-  TruckIcon,
-  MapPinIcon,
-  PhoneIcon,
-  EnvelopeIcon
+  TruckIcon
 } from '@heroicons/react/24/outline';
 
 const BillingPage = () => {
